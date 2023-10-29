@@ -27,6 +27,7 @@
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/bf48e7de-19c6-498c-98b6-fa933b295f4a)
 
 
+
 ### Javascrip Dasar
 - Pemakaian Alert sebagai property window.
 
@@ -51,6 +52,7 @@
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/b6cb6111-200b-4933-bb3f-b638b0122bf7)
 
 
+
 ### Pemakaian method dalam objek
 ```
 <!DOCTYPE html>
@@ -73,6 +75,7 @@
 - Output:
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/0958f50d-1c18-4ae8-bbc0-149098734499)
+
 
 
 ### Pemakaian Prompt
@@ -103,6 +106,7 @@
 
 
 
+
 ### Pembuatan fungsi dan cara pemanggilannya
 ```
 <!DOCTYPE html>
@@ -125,6 +129,8 @@
 - Output :
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/a6a0d9d6-6d30-4faa-991c-08425ec30c12)
+
+
 
 
 ### Dasar Pemrograman Di Javascript
@@ -199,6 +205,8 @@
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/bf3f0245-3969-4666-b085-361c2e72f0fe)
 
+
+
 ### Penggunaan operator switch untuk seleksi kondisi
 ```
 <!DOCTYPE html>
@@ -260,30 +268,32 @@ _ Output :
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/47ff40fd-23d3-4e32-b20b-ff90761f43d2)
 
+
+
+
 ### Pembuatan Form
-- Form Input
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script language="javascript">
-        function test () {
-            var val1 = document.kirim.T1.value
-            if (val1%2 == 0)
-            document.kirim.T2.value="Bilangan genap"
-            else
-            document.kirim.T2.value="Bilangan ganjil"
+    <script>
+        function test() {
+            var val1 = parseInt(document.kirim.T1.value);
+            if (val1 % 2 === 0) {
+                document.kirim.T2.value = "Bilangan genap";
+            } else {
+                document.kirim.T2.value = "Bilangan ganjil";
+            }
         }
     </script>
 </head>
 <body>
-    <from method="post" name="kirim">
+    <form method="post" name="kirim">
         <p> BIL <input type="text" name="T1" size="20"> 
         Merupakan BIL <input type="text" name="T2" size="20"></p>
-        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
-    </from>
+        <p><input type="button" value="TEBAK" name="B1" onclick="test()"></p>
+    </form>
 </body>
 </html>
 ```
@@ -291,6 +301,8 @@ _ Output :
 - output :
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/d82ce2cd-238e-4e2b-b7c2-03fd8fbe9f24)
+
+
 
 ### Form Button.
 ```
@@ -379,6 +391,8 @@ _ Output :
 - Output :
 
 ![image](https://github.com/adityaputrawijaya/Lab5web/assets/115687055/6d2e07da-853f-42e9-aa29-b015332f8559)
+
+
 
 ### Pertanyaan dan Tugas
 ### 1. Buat script untuk melakukan validasi pada isian form.
